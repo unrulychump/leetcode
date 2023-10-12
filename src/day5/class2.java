@@ -29,10 +29,16 @@ public class class2 {
             List<int[]> merged=new ArrayList<int[]>();
             for (int i=0;i<intervals.length;i++){
                 int left=intervals[i][0],right=intervals[i][1];
+                //list索引是从0开始计数的
                 if(merged.size()==0||merged.get(merged.size()-1)[1]<left){
                     merged.add(new int[]{left,right});
                 }
+                else{
+                    merged.get(merged.size()-1)[1]=Math.max(merged.get(merged.size()-1)[1],right);
+                }
             }
+            //用toArray将List对象转化成对应的数组对象！！！！
+            return merged.toArray(new int[merged.size()][]);
         }
     }
 }
