@@ -9,12 +9,5 @@ package day3;
  * 先进先出FIFO
  */
 public class class1_3 {
-    class Solution {
 
-        public int[] maxSlidingWindow(int[] nums, int k) {
-            int max=0;
-
-            return max;
-        }
-    }
 }
