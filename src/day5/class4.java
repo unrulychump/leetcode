@@ -6,6 +6,8 @@ package day5;
  * 之外其余各元素的乘积 。
  * 题目数据 保证 数组 nums之中任意元素的全部前缀元素和后缀的乘积都在  32 位 整数范围内。
  * 请 不要使用除法，且在 O(n) 时间复杂度内完成此题
+ *
+ * 前n个数的乘积，后n个数的乘积，顺序一边倒叙一边
  */
 public class class4 {
     public int[] productExceptSelf(int[] nums) {

@@ -5,6 +5,8 @@ package day6;
  * 矩阵置零(middle)
  * 给定一个 m x n 的矩阵，如果一个元素为 0 ，则将其所在行和列的所有元素都设为 0 。
  * 请使用 原地 算法。
+ *
+ * 出现在最外围的时候是不能判断是原生的0还是后面添加的0，所以要在最后的时候附上外围的0
  */
 public class class1 {
     class Solution {
@@ -25,7 +27,7 @@ public class class1 {
                 }
             }
 
-
+            //先给最外围的补上0
             for (int i = 1; i < m; i++) {
                 for (int j = 1; j < n; j++) {
                     if (matrix[i][j] == 0) {
@@ -33,6 +35,7 @@ public class class1 {
                     }
                 }
             }
+            //根据外围的结果补上十字架的0
             for (int i = 1; i < m; i++) {
                 for (int j = 1; j < n; j++) {
                     if (matrix[i][0] == 0 || matrix[0][j] == 0) {

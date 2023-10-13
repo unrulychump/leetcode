@@ -9,6 +9,8 @@ import java.util.PriorityQueue;
  * 返回 滑动窗口中的最大值 。
  * 利用优先队列自动排序的特点完成题目
  * （主要还是利用了数据结构）
+ *
+ * 没精神了 明天再看 10-12
  */
 public class class2 {
     class Solution {

@@ -1,7 +1,7 @@
 package day7;
 
 public class class1 {
-      public class ListNode {
+    class ListNode {
       int val;
       ListNode next;
       ListNode(int x) {
